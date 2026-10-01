@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normas de orientación docente - Panamá</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f3f6fb;color:#172033}
+header{background:linear-gradient(135deg,#123b66,#2d6da3);color:white;padding:32px 18px;text-align:center}
+header h1{margin:0 0 8px;font-size:30px} header p{margin:6px auto;max-width:850px}
+nav{position:sticky;top:0;background:white;padding:10px;text-align:center;box-shadow:0 2px 8px #0002;z-index:5}
+nav button{margin:4px;padding:9px 12px;border:0;border-radius:18px;background:#e7eef7;cursor:pointer}
+main{max-width:1050px;margin:20px auto;padding:0 14px}
+.intro,.card,.quiz{background:white;border-radius:16px;padding:20px;margin:16px 0;box-shadow:0 4px 14px #0001}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card h2{font-size:20px;margin:8px 0 10px} .badge{display:inline-block;background:#dcecff;padding:5px 10px;border-radius:12px;font-size:12px;font-weight:bold}
+.case{background:#fff7df;border-left:5px solid #e1ad25;padding:12px;margin:12px 0;border-radius:8px}
+button{border:0;border-radius:9px;padding:10px 14px;background:#1769aa;color:white;cursor:pointer}
+.mission{display:none;background:#eef8ef;padding:13px;border-radius:10px;margin-top:10px}
+.answer{background:#4b7d3b;margin-top:10px} .feedback{margin-top:8px;font-weight:bold}
+small{display:block;margin-top:12px;color:#566}
+.quiz h2{margin-top:0} .quiz button{margin:5px;background:#7259a8}
+footer{text-align:center;padding:30px;color:#667}
+</style>
+</head>
+<body>
+<header>
+  <h1>📚 Normas de Orientación Docente</h1>
+  <p>Recurso interactivo para educación premedia y media de Panamá</p>
+  <p><strong>10 normas · 10 situaciones · 10 misiones</strong></p>
+</header>
+<nav>
+  <button onclick="window.scrollTo({top:0,behavior:'smooth'})">Inicio</button>
+  <button onclick="document.getElementById('norm1').scrollIntoView({behavior:'smooth'})">Normas</button>
+  <button onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">Reto final</button>
+</nav>
+<main>
+<section class="intro">
+<h2>🎯 Misión general</h2>
+<p>Explora las normas, analiza cada situación práctica y completa las misiones. El objetivo es relacionar el marco jurídico y ético con decisiones que pueden aparecer en la práctica docente.</p>
+<p><strong>Importante:</strong> este recurso tiene finalidad educativa. Para decisiones jurídicas concretas debe consultarse siempre el texto oficial y verificarse la vigencia y modificaciones de cada norma.</p>
+</section>
+<section class="grid">
+
+    <article class="card norm" id="norm1">
+      <div class="badge">Norma 1</div>
+      <h2>1. Constitución Política de la República de Panamá — Capítulo V: Educación</h2>
+      <p>Establece las bases constitucionales del derecho a la educación y orienta sus fines, principios y organización.</p>
+      <div class="case"><strong>Situación práctica:</strong> Un docente debe tomar una decisión pedagógica procurando respetar el derecho a la educación y la formación integral del estudiante.</div>
+      <button onclick="showMission(1)">🔎 Abrir misión</button>
+      <div class="mission" id="mission1">
+        <strong>Reto:</strong> Identifica qué norma tiene el nivel jurídico más alto entre las seleccionadas.
+        <button class="answer" onclick="feedback(1)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback1"></div>
+      </div>
+      <small><strong>Fuente:</strong> Constitución Política de la República de Panamá.</small>
+    </article>
+    
+    <article class="card norm" id="norm2">
+      <div class="badge">Norma 2</div>
+      <h2>2. Ley 47 de 24 de septiembre de 1946 — Orgánica de Educación</h2>
+      <p>Es la norma fundamental del sistema educativo panameño y establece disposiciones sobre organización, docentes, currículo y funcionamiento educativo.</p>
+      <div class="case"><strong>Situación práctica:</strong> El docente necesita verificar el marco general que regula su trabajo dentro del sistema educativo.</div>
+      <button onclick="showMission(2)">🔎 Abrir misión</button>
+      <div class="mission" id="mission2">
+        <strong>Reto:</strong> Relaciona la norma con la organización general del sistema educativo.
+        <button class="answer" onclick="feedback(2)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback2"></div>
+      </div>
+      <small><strong>Fuente:</strong> Asamblea Nacional de Panamá. (1946). Ley 47 de 24 de septiembre de 1946.</small>
+    </article>
+    
+    <article class="card norm" id="norm3">
+      <div class="badge">Norma 3</div>
+      <h2>3. Ley 34 de 6 de julio de 1995</h2>
+      <p>Modifica, adiciona y subroga disposiciones de la Ley 47 de 1946, introduciendo cambios importantes en la organización y orientación del sistema educativo.</p>
+      <div class="case"><strong>Situación práctica:</strong> El centro educativo revisa disposiciones actualizadas de la Ley Orgánica de Educación.</div>
+      <button onclick="showMission(3)">🔎 Abrir misión</button>
+      <div class="mission" id="mission3">
+        <strong>Reto:</strong> Explica por qué una ley posterior puede modificar una ley anterior.
+        <button class="answer" onclick="feedback(3)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback3"></div>
+      </div>
+      <small><strong>Fuente:</strong> Asamblea Legislativa de Panamá. (1995). Ley 34 de 6 de julio de 1995.</small>
+    </article>
+    
+    <article class="card norm" id="norm4">
+      <div class="badge">Norma 4</div>
+      <h2>4. Decreto Ejecutivo 60 de 26 de febrero de 1996</h2>
+      <p>Aprueba el Texto Único de la Ley 47 de 1946 con numeración corrida y ordenación sistemática, incorporando las modificaciones de la Ley 34 de 1995.</p>
+      <div class="case"><strong>Situación práctica:</strong> Un docente consulta el texto organizado de la Ley Orgánica de Educación para fundamentar una actuación profesional.</div>
+      <button onclick="showMission(4)">🔎 Abrir misión</button>
+      <div class="mission" id="mission4">
+        <strong>Reto:</strong> Busca en el texto único el artículo relacionado con la situación presentada.
+        <button class="answer" onclick="feedback(4)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback4"></div>
+      </div>
+      <small><strong>Fuente:</strong> Ministerio de Educación. (1996). Decreto Ejecutivo 60 de 26 de febrero de 1996.</small>
+    </article>
+    
+    <article class="card norm" id="norm5">
+      <div class="badge">Norma 5</div>
+      <h2>5. Ley 50 de 1 de noviembre de 2002</h2>
+      <p>Modifica, subroga y adiciona artículos a la Ley 47 de 1946. Incluye disposiciones sobre descentralización, direcciones regionales y participación educativa.</p>
+      <div class="case"><strong>Situación práctica:</strong> Una escuela debe coordinar una gestión con la Dirección Regional de Educación.</div>
+      <button onclick="showMission(5)">🔎 Abrir misión</button>
+      <div class="mission" id="mission5">
+        <strong>Reto:</strong> Identifica qué norma ayuda a comprender la organización regional del sistema.
+        <button class="answer" onclick="feedback(5)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback5"></div>
+      </div>
+      <small><strong>Fuente:</strong> Asamblea Legislativa de Panamá. (2002). Ley 50 de 1 de noviembre de 2002.</small>
+    </article>
+    
+    <article class="card norm" id="norm6">
+      <div class="badge">Norma 6</div>
+      <h2>6. Decreto 100 de 14 de febrero de 1957</h2>
+      <p>Señala funciones de autoridades educativas, supervisores, directores y docentes, y establece responsabilidades relacionadas con la labor escolar.</p>
+      <div class="case"><strong>Situación práctica:</strong> El docente recibe orientación del director sobre planificación, seguimiento de estudiantes o participación en actividades institucionales.</div>
+      <button onclick="showMission(6)">🔎 Abrir misión</button>
+      <div class="mission" id="mission6">
+        <strong>Reto:</strong> Determina qué actores aparecen regulados por esta norma.
+        <button class="answer" onclick="feedback(6)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback6"></div>
+      </div>
+      <small><strong>Fuente:</strong> Ministerio de Educación. (1957). Decreto 100 de 14 de febrero de 1957.</small>
+    </article>
+    
+    <article class="card norm" id="norm7">
+      <div class="badge">Norma 7</div>
+      <h2>7. Decreto 69 de 23 de enero de 1971</h2>
+      <p>Establece funciones relacionadas con la coordinación de asignaturas; su aplicación se vincula con la orientación académica de los profesores.</p>
+      <div class="case"><strong>Situación práctica:</strong> El coordinador de una asignatura orienta a los docentes de su departamento sobre aspectos académicos.</div>
+      <button onclick="showMission(7)">🔎 Abrir misión</button>
+      <div class="mission" id="mission7">
+        <strong>Reto:</strong> Identifica el nivel de apoyo académico que ofrece la coordinación de asignatura.
+        <button class="answer" onclick="feedback(7)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback7"></div>
+      </div>
+      <small><strong>Fuente:</strong> Ministerio de Educación. (1971). Decreto 69 de 23 de enero de 1971.</small>
+    </article>
+    
+    <article class="card norm" id="norm8">
+      <div class="badge">Norma 8</div>
+      <h2>8. Decreto 121 de 4 de mayo de 1972</h2>
+      <p>Modifica el Decreto 69 de 1971 y forma parte del marco relacionado con las funciones de los coordinadores de asignatura.</p>
+      <div class="case"><strong>Situación práctica:</strong> Se necesita aclarar una función de coordinación académica en un departamento.</div>
+      <button onclick="showMission(8)">🔎 Abrir misión</button>
+      <div class="mission" id="mission8">
+        <strong>Reto:</strong> Comprueba cómo una norma modificatoria puede complementar una disposición anterior.
+        <button class="answer" onclick="feedback(8)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback8"></div>
+      </div>
+      <small><strong>Fuente:</strong> Ministerio de Educación. (1972). Decreto 121 de 4 de mayo de 1972.</small>
+    </article>
+    
+    <article class="card norm" id="norm9">
+      <div class="badge">Norma 9</div>
+      <h2>9. Decreto Ejecutivo 121 de 16 de febrero de 2012 — Código de Ética Profesional</h2>
+      <p>Establece el Código de Ética Profesional del Cuerpo de Educadores de la República y orienta la conducta, deberes y valores del educador.</p>
+      <div class="case"><strong>Situación práctica:</strong> Un docente enfrenta un conflicto ético con un colega y debe actuar con respeto, transparencia y responsabilidad.</div>
+      <button onclick="showMission(9)">🔎 Abrir misión</button>
+      <div class="mission" id="mission9">
+        <strong>Reto:</strong> Elige el valor que debe orientar la decisión y explica por qué.
+        <button class="answer" onclick="feedback(9)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback9"></div>
+      </div>
+      <small><strong>Fuente:</strong> Ministerio de Educación. (2012). Decreto Ejecutivo 121 de 16 de febrero de 2012.</small>
+    </article>
+    
+    <article class="card norm" id="norm10">
+      <div class="badge">Norma 10</div>
+      <h2>10. Ley 285 de 15 de febrero de 2022 — Protección integral de la niñez y adolescencia</h2>
+      <p>Crea un sistema de garantías y protección integral de los derechos de niños, niñas y adolescentes.</p>
+      <div class="case"><strong>Situación práctica:</strong> Un docente identifica una situación que puede afectar los derechos o la protección de un estudiante.</div>
+      <button onclick="showMission(10)">🔎 Abrir misión</button>
+      <div class="mission" id="mission10">
+        <strong>Reto:</strong> Prioriza la protección integral y activa los canales institucionales correspondientes.
+        <button class="answer" onclick="feedback(10)">Ver retroalimentación</button>
+        <div class="feedback" id="feedback10"></div>
+      </div>
+      <small><strong>Fuente:</strong> Asamblea Nacional de Panamá. (2022). Ley 285 de 15 de febrero de 2022.</small>
+    </article>
+    
+</section>
+<section class="quiz" id="quiz">
+<h2>🏆 Reto final</h2>
+<p>¿Qué norma se relaciona directamente con el Código de Ética Profesional del Cuerpo de Educadores?</p>
+<button onclick="finalFeedback(true)">Decreto Ejecutivo 121 de 2012</button>
+<button onclick="finalFeedback(false)">Ley 50 de 2002</button>
+<button onclick="finalFeedback(false)">Decreto 100 de 1957</button>
+<div id="final" style="margin-top:12px;font-weight:bold"></div>
+</section>
+</main>
+<footer>Recurso elaborado para fines académicos · 2026</footer>
+<script>
+function showMission(i) {
+ const el=document.getElementById('mission'+i);
+ el.style.display=el.style.display==='block'?'none':'block';
+}
+function feedback(i) {
+ const el=document.getElementById('feedback'+i);
+ el.textContent='Retroalimentación: relaciona la norma con su finalidad y, antes de actuar, consulta el texto oficial y los procedimientos institucionales aplicables.';
+}
+function finalFeedback(ok) {
+ document.getElementById('final').textContent=ok?'✅ Correcto. El Decreto Ejecutivo 121 de 2012 establece el Código de Ética Profesional del Cuerpo de Educadores.':'🔁 Revisa nuevamente las normas y busca cuál establece el Código de Ética Profesional.';
+}
+</script>
+</body>
+</html>
